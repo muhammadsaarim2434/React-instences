@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../logo.png'
 import hero from '../web-main.gif'
+import {  Link } from "react-router-dom"
 
 
 function Headers() {
@@ -19,7 +20,7 @@ function Headers() {
               alt=""
             />
           </a>
-          {/* Navbar for Mobile*/}
+     
           <button
             className="navbar-toggler"
             data-bs-toggle="offcanvas"
@@ -27,8 +28,8 @@ function Headers() {
             role="button"
             aria-controls="offcanvasExample"
           >
-            {" "}
-            <span className="navbar-toggler-icon" />{" "}
+            
+            <span className="navbar-toggler-icon" />
           </button>
           <div
             className="offcanvas offcanvas-start"
@@ -38,13 +39,13 @@ function Headers() {
           >
             <div className="offcanvas-header">
               <a className="navbar-brand" href="/">
-                {" "}
+                
                 <img
                   src={logo}
                   alt="logo"
                   className="img-fluid"
                   width={40}
-                />{" "}
+                />
               </a>
               <button
                 type="button"
@@ -64,7 +65,7 @@ function Headers() {
                   <a
                     className="nav-link active"
                     aria-current="page"
-                    href="#about"
+                    href="/#about"
                   >
                     ABOUT
                   </a>
@@ -73,7 +74,7 @@ function Headers() {
                   <a
                     className="nav-link active"
                     aria-current="page"
-                    href="#services"
+                    href="/#services"
                   >
                     SERVICES
                   </a>
@@ -82,7 +83,7 @@ function Headers() {
                   <a
                     className="nav-link active"
                     aria-current="page"
-                    href="#portfolio"
+                    href="/#portfolio"
                   >
                     PORTFOLIO
                   </a>
@@ -91,7 +92,7 @@ function Headers() {
                   <a
                     className="nav-link active"
                     aria-current="page"
-                    href="#pricing"
+                    href="/#pricing"
                   >
                     PRICING
                   </a>
@@ -100,15 +101,15 @@ function Headers() {
                   <a
                     className="nav-link active"
                     aria-current="page"
-                    href="#contact"
+                    href="/#contact"
                   >
                     CONTACT US
                   </a>
                 </li>
               </ul>
-              <a href="#" className="nav_button">
+              <Link to="/career" className="nav_button">
                 <button>CAREER</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -124,9 +125,11 @@ function Headers() {
             Pattern with reference to the ghost showing Scrooge some different
             futures.
           </p>
-          <a href="#">
-            <button>Discover Now</button>
-          </a>
+         
+      {/* <Link to='/discover'>
+      
+      </Link> */}
+      <a href='#about'><button>Discover Now</button></a>
         </div>
       </div>
       <div className="col-12 col-md-5 my-5" data-aos="fade-right">

@@ -25,7 +25,7 @@ function About() {
                                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
                                     nostrud exercitation ullamco.
                                 </p>
-                                <a href="#">
+                                <a href="#portfolio">
                                     <button>Discover Now</button>
                                 </a>
                             </div>

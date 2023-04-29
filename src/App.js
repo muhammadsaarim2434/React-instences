@@ -1,24 +1,17 @@
-import React from 'react';
-import './App.css';
-import Headers from './components/Headers';
-import About from './components/About';
-import Services from './components/Services.jsx'
-import Views from './components/Views.jsx'
-import Portfolio from './components/Portfolio.jsx';
-import Feedbaack from './components/Feedbaack';
-import Plans from './components/Plans';
-import Footer from './components/Footer';
+import React from "react";
+import Home from './pages/Home';
+import Career from './pages/Career';
+ 
+import { Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <div>
-      <Headers />
-      <About />
-      <Services />
-      <Views />
-      <Portfolio />
-      <Feedbaack />
-      <Plans />
-      <Footer />
+   
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/career" element={<Career />} />
+      </Routes>
     </div>
   );
 }
